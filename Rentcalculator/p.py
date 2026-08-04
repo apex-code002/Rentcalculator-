@@ -45,7 +45,7 @@ def get_positive_int(prompt):
     while True:
         try:
             value = int(input(prompt))
-            if value <= 0:
+            if value<= 0:
                 raise ValueError
             return value
         except ValueError:
